@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historien om Aarhus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <h1>🕵️‍♂️ Tag med på tidsrejse i Aarhus!</h1>
+    <p>Hop tilbage i tiden og opdag 🚂 tog, 🎭 teatre, 🏰 slotte og seje steder i byen!</p>
+    <div class="scroll-down" onclick="scrollToTimeline()">⬇️</div>
+  </section>
+
+  <!-- TIDSLINJE -->
+  <section class="timeline-container">
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <div class="scroll-indicator-track">
+    <div class="scroll-indicator-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img id="lightboxImage" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <div id="inactivity-popup" style="display: none;">
+    <div class="popup-content">
+      <h2>⏳ Er du der stadig?</h2>
+      <p>Tryk på knappen, så vi ved du er med!</p>
+      <button onclick="stayOnPage()">🙋 Ja, jeg er her!</button>
+    </div>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
